@@ -1,0 +1,11 @@
+Listing 5.1 A basic pod manifest: kubia.yaml
+apiVersion: v1
+kind: Pod
+metadata:    
+  name: kubia
+spec:    
+  containers:     
+  - name: kubia
+    image: luksa/kubia:1.0
+    ports:        
+    - containerPort: 8080
